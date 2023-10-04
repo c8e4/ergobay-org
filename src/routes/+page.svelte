@@ -1,40 +1,43 @@
 <script lang="ts">
-	import WalletBalanceExample from "$lib/basic/WalletBalanceExample.svelte";
-	import NotificationsExample from "$lib/basic/NotificationsExample.svelte";
-	import TransactionExample from "$lib/basic/TransactionExample.svelte";
-	import MintNftExample from "$lib/basic/MintNftExample.svelte";
-	import WalletBoxesExample from "$lib/basic/WalletBoxesExample.svelte";
-	import FetchOracleBoxExample from "$lib/basic/FetchOracleBoxExample.svelte";
+	import KYA from "$lib/common/KYA.svelte"
 </script>
 
 <div class="flex flex-col grow p-4 main-page" style="padding-top:77px;">
-	<h1 class="text-5xl font-bold mb-10 mt-5">Welcome to SampleApp!</h1>
-
-	<div class="flex flex-wrap gap-4 w-full">
-		<WalletBalanceExample></WalletBalanceExample>
-		<NotificationsExample></NotificationsExample>
-		<TransactionExample></TransactionExample>
-		<MintNftExample></MintNftExample>
-		<FetchOracleBoxExample></FetchOracleBoxExample>
-		<WalletBoxesExample></WalletBoxesExample>
-	</div>
 </div>
 
 <style lang="postcss">
 	:global(html) {
-		background-color: #8bc6ec;
-		background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+		background-color: #1b2845;
+		background-image: linear-gradient(315deg, #1b2845 0%, #274060 74%);
+		background-image: linear-gradient(315deg, #1b2845 0%, #274060 74%);
+		background-image: radial-gradient(circle, #2a2a2a, #1b2845);
+		/* background-image: linear-gradient(315deg, #4B0082 0%, #000000 74%); */
+
 		min-height: 100vh;
 	}
 	:global(body) {
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
-		color: #251e43;
+		color: #d1d1d1;
+		/* color: #C0A080; */
 	}
-	.main-page{
-		background-image: url("https://bitmasks.io/landing/sushimobile.png");
-		background-position: center;
-    	background-repeat: no-repeat;
+	:global(button.btn) {
+		background-color: #d1d1d1;
+		color: #1b2845;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: 0.3s;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+	:global(button.btn:hover) {
+		background-color: #b1b1b1; /* Slightly darker for hover effect */
+	}
+	.main-page {
+		background-position: cover;
+		background-repeat: no-repeat;
 	}
 </style>
