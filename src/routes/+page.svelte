@@ -1,8 +1,18 @@
 <script lang="ts">
-	import KYA from "$lib/common/KYA.svelte"
+	let loading = true;
 </script>
 
-<div class="flex flex-col grow p-4 main-page" style="padding-top:77px;">
+<div class="h-full flex flex-col grow p-4 main-page" style="padding-top:77px;">
+	{#if loading}
+	<div class="grow flex flex-col items-center justify-center">
+		<img src="ergobay.png" style="width:400px;" alt="">
+		<div class="font-mono">loading...</div>
+	</div>
+	{:else}
+		<div>
+			<!-- content here -->
+		</div>
+	{/if}
 </div>
 
 <style lang="postcss">
