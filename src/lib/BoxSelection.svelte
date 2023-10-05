@@ -38,14 +38,20 @@
 	}
 </script>
 
-<div class="bg-coral2 flex flex-col items-center gap-10" style="margin-top:-100px;">
-	<div style="padding-top:200px;" class="text-7xl font-bold text-white">${boxes[imgIndex].usd} USD</div>
+<div class="bg-coral2 flex flex-col items-center" style="margin-top:-100px;">
+	<div style="padding-top:000px;" class="text-7xl font-bold text-white">${boxes[imgIndex].usd}</div>
 	<div class="flex items-center">
 		<div style={`visibility:${imgIndex == 0 ? 'hidden' : 'unset'}`}>
 			<button class="btn" on:click={back}> back </button>
 		</div>
-		<div>
-			<img class="unselectable" src={boxes[imgIndex].img} alt="" />
+		<div style="width: 700px; height: 512px; position:relative;">
+			<img 
+			style="max-width: 700px; max-height: 512px;left:0;top:0;"
+			class="absolute unselectable" src={boxes[imgIndex].img} alt="" />
+			<button 
+			style="min-width:200px; bottom: 20%;left: 50%; transform: translate(-50%, -50%); color:white;"
+			class="btn absolute">
+			hodl {boxes[imgIndex].erg}</button>
 		</div>
 		<div style={`visibility:${imgIndex == boxes.length - 1 ? 'hidden' : 'unset'}`}>
 			<button class="btn" on:click={next}> next </button>
