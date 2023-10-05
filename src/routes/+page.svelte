@@ -1,18 +1,16 @@
 <script lang="ts">
-	import BoxSelection from "$lib/BoxSelection.svelte"
+	import Landing from "$lib/Landing.svelte"
 	let loading = false;
 </script>
 
-<div class="h-full flex flex-col grow p-4 main-page" style="padding-top:77px;">
+<div class="h-full flex flex-col grow main-page" style="padding-top:77px;">
 	{#if loading}
 	<div class="grow flex flex-col items-center justify-center">
 		<img class="unselectable" src="ergobay.png" style="width:400px;" alt="">
 		<div class="font-mono">loading...</div>
 	</div>
 	{:else}
-		<div class="grow flex flex-col items-center justify-center">
-			<BoxSelection></BoxSelection>
-		</div>
+		<Landing></Landing>
 	{/if}
 </div>
 
