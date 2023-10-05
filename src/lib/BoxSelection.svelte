@@ -42,7 +42,9 @@
 </script>
 
 <div class="bg-coral2 flex flex-col items-center" style="margin-top:-100px;">
-	<div style="padding-top:000px;" class="text-7xl font-bold text-white">${boxes[imgIndex].usd}</div>
+	<div class="font-bold text-white">24 months</div>
+	<div class="text-7xl font-bold text-white">${boxes[imgIndex].usd}</div>
+	<div class="font-bold text-white">$20/ERG</div>
 	<div class="flex items-center">
 		<div style={`visibility:${imgIndex == 0 ? 'hidden' : 'unset'}`}>
 			<button class="btn" on:click={back}> back </button>
