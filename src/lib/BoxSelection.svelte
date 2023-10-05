@@ -1,4 +1,7 @@
 <script>
+	import MintButton from "./MintButton.svelte";
+
+
 	const boxes = [
 		{
 			img: 'chest/10erg.png',
@@ -48,10 +51,12 @@
 			<img 
 			style="max-width: 700px; max-height: 512px;left:0;top:0;"
 			class="absolute unselectable" src={boxes[imgIndex].img} alt="" />
-			<button 
-			style="min-width:200px; bottom: 20%;left: 50%; transform: translate(-50%, -50%); color:white;"
-			class="btn absolute">
-			hodl {boxes[imgIndex].erg}</button>
+			<div style="margin-bottom:-100px;position:absolute; bottom: 0%;left: 50%; transform: translate(-50%, -50%); color:white;">
+				<MintButton>
+					hodl {boxes[imgIndex].erg} ERG
+				</MintButton>
+				
+			</div>
 		</div>
 		<div style={`visibility:${imgIndex == boxes.length - 1 ? 'hidden' : 'unset'}`}>
 			<button class="btn" on:click={next}> next </button>
