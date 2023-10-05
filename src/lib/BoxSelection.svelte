@@ -42,12 +42,14 @@
 </script>
 
 <div class="bg-coral2 flex flex-col items-center" style="margin-top:-100px;">
-	<div class="font-bold text-white">24 months</div>
+	<div class="text-xl text-slate-900 hand">24 months</div>
 	<div class="text-7xl font-bold text-white">${boxes[imgIndex].usd}</div>
-	<div class="font-bold text-white">$20/ERG</div>
+	<div class="font-bold text-white font-thin italic">$20/ERG</div>
 	<div class="flex items-center">
 		<div style={`visibility:${imgIndex == 0 ? 'hidden' : 'unset'}`}>
-			<button class="btn" on:click={back}> back </button>
+			<button class="btn-next" on:click={back}>
+				<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path style="fill: #FFF9;" d="M20 0H0v20h20zm-7.354 14.166-1.389 1.439-5.737-5.529 5.729-5.657 1.4 1.424-4.267 4.215z"/></svg>
+			</button>
 		</div>
 		<div style="width: 700px; height: 512px; position:relative;">
 			<img 
@@ -57,20 +59,19 @@
 				<MintButton>
 					hodl {boxes[imgIndex].erg} ERG
 				</MintButton>
-				
 			</div>
 		</div>
 		<div style={`visibility:${imgIndex == boxes.length - 1 ? 'hidden' : 'unset'}`}>
-			<button class="btn" on:click={next}> next </button>
+			<button class="btn-next" on:click={next}>
+				<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path style="fill: #FFF9;" d="M20 0H0v20h20zM7.658 15.707l-1.414-1.414L10.537 10 6.244 5.707l1.414-1.414L13.365 10z"/></svg>
+			</button>
 		</div>
 	</div>
 </div>
 
 <style>
-	.bg-coral {
-		background-image: url('bg/coral.png');
-		background-size: contain;
-		background-position: center;
-		background-repeat: no-repeat;
+	.btn-next{
+		width:100px;
+		height:auto;	
 	}
 </style>
