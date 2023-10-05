@@ -3,7 +3,7 @@
 	let loading = false;
 </script>
 
-<div class="h-full flex flex-col grow main-page" style="padding-top:77px;">
+<div class="h-full flex flex-col grow main-page">
 	{#if loading}
 	<div class="grow flex flex-col items-center justify-center">
 		<img class="unselectable" src="ergobay.png" style="width:400px;" alt="">

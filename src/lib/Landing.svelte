@@ -11,6 +11,6 @@
         background: url("bg/bg.png");
         min-height: 100vh;
         background-size: cover;
-        background-position: 50% 60%;
+        background-position: 50% 50%;
     }
 </style>

@@ -41,7 +41,7 @@
 	}
 </script>
 
-<div class="bg-coral2 flex flex-col items-center" style="margin-top:-100px;">
+<div class="bg-coral2 flex flex-col items-center">
 	<div class="text-xl text-slate-900 hand">24 months</div>
 	<div class="text-7xl font-bold text-white">${boxes[imgIndex].usd}</div>
 	<div class="font-bold text-white font-thin italic">$20/ERG</div>
