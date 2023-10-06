@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Contract from "$lib/Contract.svelte";
 	import Landing from "$lib/Landing.svelte"
 	let loading = false;
 </script>
@@ -11,6 +12,7 @@
 	</div>
 	{:else}
 		<Landing></Landing>
+		<Contract></Contract>
 	{/if}
 </div>
 

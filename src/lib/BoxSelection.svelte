@@ -1,7 +1,6 @@
 <script>
 	import MintButton from "./MintButton.svelte";
 
-
 	const boxes = [
 		{
 			img: 'chest/10erg.png',
@@ -29,8 +28,6 @@
 			usd: '25,40'
 		}
 	];
-
-	let hodlRate = 20;
 
 	let imgIndex = 0;
 	function back() {
