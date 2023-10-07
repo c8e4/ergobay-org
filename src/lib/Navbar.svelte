@@ -7,8 +7,8 @@
 	style="height:77px;border-bottom: 1px solid #80808045"
 >
 	<a href="/" class="flex items-center gap-2">
-		<img src="ergobay.png" alt="" class="w-16">
-		<div class="font-bold text-2xl">HodlBox</div>
+		<img src="ship.png" alt="" class="w-16">
+		<div class="font-bold text-2xl">ErgoBay</div>
 	</a>
 	<div class="flex items-center gap-4">
 		<WalletButton />

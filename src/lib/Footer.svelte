@@ -6,7 +6,6 @@
 
 	onMount(()=>{
 		const kya_accepted = localStorage.getItem('ergobay_kya_accepted')
-		console.log({kya_accepted})
 		if(!kya_accepted){
 			showModal =  true;
 		}
@@ -23,7 +22,7 @@
 			<a href="https://github.com/c8e4/ergobay-org">Web Interface</a>
 		</div>
 		<div>
-			<a href="https://github.com/c8e4/contracts">Contracts</a>
+			<a href="https://github.com/c8e4/ergobay-org/blob/main/src/lib/contract/hodlbox.es">Contract</a>
 		</div>
 		<div>
 			<a href="https://github.com/SavonarolaLabs/ergo-web-template">Web Template</a>
@@ -32,7 +31,7 @@
     <div class="flex flex-col gap-4">
 		<div class="text-slate-500 font-bold">Social</div>
 		<div>
-			<a href="https://discord.gg/ergo-platform-668903786361651200">Discord</a>
+			<a href="https://discord.com/channels/832508980357627944/1159876443925393448">Discord</a>
 		</div>
 		<div>
 			<a href="https://twitter.com/c8e4d2">Twitter</a>

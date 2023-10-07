@@ -1,14 +1,14 @@
 <script lang="ts">
 	import Contract from "$lib/Contract.svelte";
 	import Landing from "$lib/Landing.svelte"
-	let loading = false;
+	let loading = true;
 </script>
 
 <div class="h-full flex flex-col grow main-page">
 	{#if loading}
 	<div class="grow flex flex-col items-center justify-center">
-		<img class="unselectable" src="ergobay.png" style="width:400px;" alt="">
-		<div class="font-mono">loading...</div>
+		<img class="unselectable" src="ship.png" style="width:250px;" alt="">
+		<div class="font-mono mt-4">loading...</div>
 	</div>
 	{:else}
 		<Landing></Landing>

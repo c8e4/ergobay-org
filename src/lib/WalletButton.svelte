@@ -16,7 +16,6 @@
 	let balanceInNanoErg = '0';
 	let balanceErg = '0.00';
 	async function loadBlance(wallet) {
-		//console.log("load balance")
 		if (window.ergoConnector[wallet]?.isConnected) {
 			balanceInNanoErg = await ergo.get_balance();
 			balanceErg = (+balanceInNanoErg / 10 ** 9).toFixed(2);
