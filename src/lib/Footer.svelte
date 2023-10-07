@@ -22,7 +22,7 @@
 			<a href="https://github.com/c8e4/ergobay-org">Web Interface</a>
 		</div>
 		<div>
-			<a href="https://github.com/c8e4/ergobay-org/blob/main/src/lib/contract/hodlbox.es">Contract</a>
+			<a href="https://github.com/c8e4/ergobay-org/blob/main/src/lib/contract/sell.es">Contract</a>
 		</div>
 		<div>
 			<a href="https://github.com/SavonarolaLabs/ergo-web-template">Web Template</a>
